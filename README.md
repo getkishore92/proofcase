@@ -1,5 +1,7 @@
 # Portfolio Case Study
 
+[![skills.sh](https://skills.sh/b/getkishore92/portfolio-case-study)](https://skills.sh/getkishore92/portfolio-case-study)
+
 An open Agent Skill that turns rough project material into a credible portfolio case study for product designers, UX researchers, product managers, software developers, and design engineers.
 
 It can audit an existing case study, interview you to recover missing context, rewrite the story, tailor it to a job description, or create an interview presentation. It adjusts the expected proof for junior, mid-level, senior, staff, lead, and manager roles.
@@ -24,7 +26,15 @@ The skill does not invent metrics, research, impact, or ownership. It flags miss
 
 ## Install
 
-This repository follows the portable Agent Skills structure. Clone or copy the repository into the skills directory used by your AI tool.
+Install it for Codex, Claude Code, Cursor, Windsurf, and other supported agents with the Skills CLI:
+
+```bash
+npx skills add getkishore92/portfolio-case-study
+```
+
+The CLI detects the available agent and installs the root `SKILL.md` with its references. Installs made through the CLI contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/portfolio-case-study). Review any skill before installing it because agent skills run with the permissions of the host agent.
+
+You can also clone the repository into a tool-specific skills directory.
 
 ### Codex
 
