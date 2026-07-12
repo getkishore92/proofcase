@@ -16,21 +16,23 @@ Give it a case study, project notes, screenshots, repository, presentation, or j
 
 ```text
 proofcase/
-├── SKILL.md                         # Core workflow
-├── agents/
-│   └── openai.yaml                 # Agent metadata and icons
 ├── assets/
-│   ├── proofcase-cover.png         # README and launch cover
-│   ├── proofcase-icon.png          # Square project icon
-│   └── proofcase-wordmark.png      # Primary logo lockup
-├── references/
-│   ├── examples.md                 # Fictional before-and-after lessons
-│   ├── industry-patterns.md        # B2B, B2C, engineering, motion
-│   ├── intake-and-seniority.md     # Questions and level calibration
-│   ├── narrative-and-evidence.md   # Claims, attribution, story structure
-│   ├── output-templates.md         # Web, recruiter, and interview formats
-│   ├── research.md                 # Hiring and portfolio sources
-│   └── rubric.md                   # Evidence-based scoring
+│   ├── launch/                     # Social launch cards
+│   └── proofcase-cover.png         # README cover
+├── skills/
+│   └── proofcase/
+│       ├── SKILL.md                # Core workflow
+│       ├── agents/
+│       │   └── openai.yaml         # Agent metadata and icons
+│       ├── assets/                 # Installed logo and icon
+│       └── references/
+│           ├── examples.md         # Fictional before-and-after lessons
+│           ├── industry-patterns.md
+│           ├── intake-and-seniority.md
+│           ├── narrative-and-evidence.md
+│           ├── output-templates.md
+│           ├── research.md
+│           └── rubric.md
 ├── README.md
 ├── THIRD_PARTY_NOTICES.md
 └── LICENSE
@@ -92,19 +94,21 @@ npx skills add getkishore92/proofcase
 
 The CLI supports Codex, Claude Code, Cursor, Windsurf, and other compatible agents. Installs contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/proofcase).
 
-You can clone the skill into an agent-specific directory:
+You can clone the repository and copy its skill package into an agent-specific directory:
 
 ```bash
+git clone https://github.com/getkishore92/proofcase.git
+
 # Codex
-git clone https://github.com/getkishore92/proofcase.git ~/.codex/skills/proofcase
+cp -R proofcase/skills/proofcase ~/.codex/skills/proofcase
 
 # Claude Code
-git clone https://github.com/getkishore92/proofcase.git ~/.claude/skills/proofcase
+cp -R proofcase/skills/proofcase ~/.claude/skills/proofcase
 ```
 
 Restart the agent if it does not detect the skill.
 
-For agents without Skills CLI support, load `SKILL.md` as project knowledge or include it in the system prompt. Load reference files when the task needs them.
+For agents without Skills CLI support, load `skills/proofcase/SKILL.md` as project knowledge or include it in the system prompt. Load reference files when the task needs them.
 
 ## Use
 
@@ -150,7 +154,7 @@ A full run can produce:
 6. likely interview questions and weak points
 7. optional recruiter, web, presentation, and job-specific versions
 
-The bundled [examples](references/examples.md) use fictional composites to demonstrate stronger B2B, B2C, research, engineering, design-engineering, AI-product, and leadership case studies. Every invented fact is labeled and exists for teaching.
+The bundled [examples](skills/proofcase/references/examples.md) use fictional composites to demonstrate stronger B2B, B2C, research, engineering, design-engineering, AI-product, and leadership case studies. Every invented fact is labeled and exists for teaching.
 
 ## What it catches
 
@@ -173,7 +177,7 @@ Proofcase treats the portfolio as evidence for a hiring conversation. It cannot 
 
 ## Research and credits
 
-The workflow draws on current portfolio and skills-based hiring research listed in [references/research.md](references/research.md).
+The workflow draws on current portfolio and skills-based hiring research listed in [skills/proofcase/references/research.md](skills/proofcase/references/research.md).
 
 The narrative guidance responds to Fabricio Teixeira's critique in [The case study factory](https://essays.uxdesign.cc/case-study-factory/): repeated process templates can hide the judgment a case study should reveal.
 
