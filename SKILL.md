@@ -12,18 +12,18 @@ Build evidence for a hiring decision. Preserve the user's voice, actual contribu
 1. Start from evidence. Inspect every artifact the user provides before proposing a story.
 2. Tailor the proof to the target role, company, domain, and seniority.
 3. Make ownership explicit. Separate the user's work from team work.
-4. Organize around decisions, constraints, and outcomes. Do not force a generic design-process template onto the project.
+4. Organize around decisions, constraints, and outcomes. Remove generic design-process scaffolding.
 5. Support scanning and deep reading. Put the strongest proof near the top, then supply enough detail to defend it in an interview.
-6. Show final work early. Use process material only when it explains a consequential decision.
+6. Show final work near the top. Use process material when it explains a consequential decision.
 7. Treat missing evidence as missing. Do not invent research, metrics, quotes, causality, dates, tools, or shipped status.
-8. Show counterevidence. Include failed bets, negative or flat results, limits, and what changed next when they affected the work.
+8. Show counterevidence. Include failed bets, negative or flat results, limits, and the team's response when they affected the work.
 9. Keep AI use factual. Explain what the user did with AI, what they verified, and where human judgment changed the result.
 10. Protect confidential work. Offer redaction, ranges, indexing, reconstructed diagrams, or password-protected delivery.
 11. State limits. A case study can improve fit and interview readiness; it cannot guarantee a job.
 
 ## Choose the mode
 
-Infer the mode from the request. Confirm only when the choice changes the deliverable.
+Infer the mode from the request. Confirm when the choice changes the deliverable.
 
 - **Audit:** Diagnose an existing case study and rank fixes.
 - **Extract:** Interview the user and reconstruct a case study from incomplete material.
@@ -51,17 +51,17 @@ Do not ask the user for information already present in the artifacts.
 
 ## Phase 2: run the minimum intake
 
-Read [references/intake-and-seniority.md](references/intake-and-seniority.md). Ask questions only when the answers affect the narrative, claims, or output.
+Read [references/intake-and-seniority.md](references/intake-and-seniority.md). Ask questions when the answers affect the narrative, claims, or output.
 
 Ask no more than five short questions in one round. Prefer one round. Useful questions cover:
 
 1. target role or job description
 2. actual role, team, dates, and level of ownership
 3. project goal, constraints, and stakes
-4. two or three decisions the user personally influenced
+4. two or three decisions the user influenced
 5. shipped result, evidence of change, and sharing limits
 
-If the user wants a quick audit, proceed with stated assumptions and list missing proof. If the user wants a polished final case study, pause for material facts that cannot be inferred safely.
+For a quick audit, state assumptions and list missing proof. For a publishable case study, pause when the artifacts cannot support a material fact.
 
 ## Phase 3: calibrate the hiring signal
 
@@ -89,7 +89,7 @@ Read [references/narrative-and-evidence.md](references/narrative-and-evidence.md
 
 Apply these rules:
 
-- Use causal language only when the evidence supports causality.
+- Use causal language when the evidence supports causality.
 - Label estimates, directional results, and proxy measures.
 - Attribute team outcomes while stating the user's contribution.
 - Replace unsupported metrics with observable change, adoption evidence, decisions enabled, risk reduced, or a clear learning.
@@ -122,7 +122,7 @@ Use a two-layer structure.
 
 ### Scan layer
 
-The opening should let a recruiter or hiring manager answer these questions quickly:
+The opening should let a recruiter or hiring manager answer these questions at a glance:
 
 - What changed?
 - What did this person own?
@@ -134,7 +134,7 @@ Include a specific title, one-sentence summary, role and scope, timeframe, team,
 
 ### Deep layer
 
-Use only the sections the story earns:
+Use the sections the story earns:
 
 - context and stakes
 - role, team, and boundaries
@@ -152,11 +152,11 @@ For detailed patterns, read [references/narrative-and-evidence.md](references/na
 
 Read [references/industry-patterns.md](references/industry-patterns.md) to choose evidence for B2B, B2C, engineering, design-engineering, motion, prototypes, and interactive presentation.
 
-When the user asks to see transformations or needs help understanding a recommendation, read [references/examples.md](references/examples.md). Use real examples only when the author has granted permission or the material is contributed under a compatible license. Keep excerpts short, link to the source, and explain the editorial change. Do not treat someone else's public portfolio as permission to reproduce it.
+For transformations or worked explanations, read [references/examples.md](references/examples.md). Use named portfolio examples with permission or a compatible licence. Keep excerpts short, link to the source, and explain the edit. Public access does not grant reproduction rights.
 
 ## Phase 7: show AI-era capability with provenance
 
-Add AI content only when it is relevant and true. Useful evidence includes:
+Add relevant, factual AI content. Useful evidence includes:
 
 - a workflow the user accelerated and the time or iteration gained
 - a prototype, code path, analysis, or artifact the user produced with AI
@@ -166,7 +166,7 @@ Add AI content only when it is relevant and true. Useful evidence includes:
 
 Avoid tool lists and claims such as "used AI throughout the process." Name the task, judgment, validation, and result. Show traceable work when public links, code, demos, or artifacts are safe to share.
 
-Do not manufacture UX process to make a project look complete. Exclude card sorts, personas, journey maps, affinity maps, or interview counts unless they are real and changed a decision. Clearly label synthetic participants, simulated data, concept work, and self-initiated redesigns.
+Exclude manufactured UX process. Keep card sorts, personas, journey maps, affinity maps, or interview counts when they are real and changed a decision. Label synthetic participants, simulated data, concept work, and self-initiated redesigns.
 
 ## Phase 8: edit the copy
 
@@ -206,7 +206,7 @@ Do not chase a perfect score by adding length. Explain proof gaps the user must 
 Match the user's request. A full engagement should produce:
 
 1. **Positioning:** target role, seniority signal, and one-sentence case-study promise
-2. **Evidence gaps:** missing proof and how to recover or represent it honestly
+2. **Evidence gaps:** missing proof and ways to recover or represent it without invention
 3. **Revised case study:** publishable copy with visual placeholders and captions
 4. **Change log:** the most consequential structural and copy changes
 5. **Interview defense:** likely questions, weak points, and concise answers grounded in the record
@@ -214,7 +214,7 @@ Match the user's request. A full engagement should produce:
 
 When useful, add one or two focused before-and-after excerpts. Label any reconstructed example and preserve the facts in both versions.
 
-When editing files, preserve the original unless the user authorizes an in-place change. When reviewing only, do not publish, deploy, or change external systems.
+When editing files, preserve the original unless the user authorizes an in-place change. For a review, do not publish, deploy, or change external systems.
 
 ## Research basis
 

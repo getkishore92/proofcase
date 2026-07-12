@@ -2,89 +2,182 @@
 
 [![skills.sh](https://skills.sh/b/getkishore92/proofcase)](https://skills.sh/getkishore92/proofcase)
 
-**Case studies that hold up under scrutiny.**
+![Proofcase: Turn project work into proof](assets/proofcase-cover.png)
 
-Proofcase is an open Agent Skill that turns rough project material into a credible portfolio case study for product designers, UX researchers, product managers, software developers, and design engineers.
+**Turn project work into a case study people can scan, trust, and discuss in an interview.**
 
-It can audit an existing case study, interview you to recover missing context, rewrite the story, tailor it to a job description, or create an interview presentation. It adjusts the expected proof for junior, mid-level, senior, staff, lead, and manager roles.
+## What this is
 
-## What it checks
+Proofcase audits, reconstructs, writes, and tailors portfolio case studies for product designers, UX researchers, product managers, software developers, and design engineers.
 
-- role fit and seniority signal
-- ownership and team attribution
-- decisions, constraints, and tradeoffs
-- visual or technical evidence
-- outcomes and claim integrity
-- negative results, tradeoffs, and missing evidence
-- AI use, verification, and provenance
-- scan quality and interview defense
-- direct, natural copy
+Give it a case study, project notes, screenshots, repository, presentation, or job description. It inspects the evidence, asks for material facts it cannot recover, and produces a clearer account without inventing research, ownership, or impact.
 
-The package also includes permissioned before-and-after examples from real Pocket FM and Togai case studies. Each example explains the structural or editorial decision behind the revision.
+## Skill structure
 
-It routes B2B, B2C, engineering, and design-engineering work through different proof standards. It also covers prototypes, motion, interactive explanations, and small portfolio details such as easter eggs without letting presentation hide weak evidence.
+```text
+proofcase/
+├── SKILL.md                         # Core workflow
+├── agents/
+│   └── openai.yaml                 # Agent metadata and icons
+├── assets/
+│   ├── proofcase-cover.png         # README and launch cover
+│   ├── proofcase-icon.png          # Square project icon
+│   └── proofcase-wordmark.png      # Primary logo lockup
+├── references/
+│   ├── examples.md                 # Fictional before-and-after lessons
+│   ├── industry-patterns.md        # B2B, B2C, engineering, motion
+│   ├── intake-and-seniority.md     # Questions and level calibration
+│   ├── narrative-and-evidence.md   # Claims, attribution, story structure
+│   ├── output-templates.md         # Web, recruiter, and interview formats
+│   ├── research.md                 # Hiring and portfolio sources
+│   └── rubric.md                   # Evidence-based scoring
+├── README.md
+├── THIRD_PARTY_NOTICES.md
+└── LICENSE
+```
 
-The skill does not invent metrics, research, impact, or ownership. It flags missing proof and suggests honest ways to recover or represent it.
+## What Proofcase helps you do
+
+- find the strongest story inside a messy project
+- make ownership and team boundaries clear
+- match the depth to junior, mid-level, senior, staff, lead, or manager roles
+- tailor one case study to a specific job without changing the facts
+- move final work and defensible outcomes closer to the top
+- turn research, metrics, code, screenshots, and prototypes into evidence
+- include failed bets, flat results, tradeoffs, and unresolved limits
+- remove generic process sections and AI-sounding copy
+- prepare a web case study, recruiter skim, or interview presentation
+- anticipate the questions a hiring panel will ask
+
+## How it works
+
+### Evidence before narrative
+
+Proofcase builds a claim ledger for ownership, sources, confidence, outcomes, and counterevidence. Missing proof stays missing. Estimates remain estimates. Shared outcomes receive shared attribution.
+
+### Match proof to the work
+
+| Project type | Proofcase looks for |
+|---|---|
+| B2B | roles, permissions, complex workflows, integrations, adoption, operational change |
+| B2C | segments, lifecycle, experiments, retention, monetisation, trust, localisation |
+| Engineering | architecture, constraints, alternatives, testing, rollout, reliability, cost |
+| Design engineering | prototypes, component APIs, states, motion, accessibility, shipped behaviour |
+| Research | question quality, method limits, confidence, privacy, decision influence |
+| Leadership | direction, leverage, team outcomes, influence, operating mechanisms |
+
+### Support three reading speeds
+
+The case study works at three reading speeds:
+
+1. A fast scan shows what changed, what you owned, and the strongest proof.
+2. A focused review explains the decisions, tradeoffs, and final work.
+3. Interview depth preserves alternatives, metric caveats, edge cases, and lessons.
+
+### Remove portfolio theater
+
+Proofcase removes card sorts, personas, journey maps, workshop photos, and process diagrams when they do not explain a real decision. It does not fabricate participants, quotes, metrics, validation, shipped status, or causal impact.
+
+### Use visual and interactive evidence
+
+The skill helps select and caption images, prototypes, recordings, motion, live demos, diagrams, and code. It treats interaction and easter eggs as useful craft signals when they support the work and remain accessible.
 
 ## Install
 
-Install it for Codex, Claude Code, Cursor, Windsurf, and other supported agents with the Skills CLI:
+Install with the Skills CLI:
 
 ```bash
 npx skills add getkishore92/proofcase
 ```
 
-The CLI detects the available agent and installs the root `SKILL.md` with its references. Installs made through the CLI contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/proofcase). Review any skill before installing it because agent skills run with the permissions of the host agent.
+The CLI supports Codex, Claude Code, Cursor, Windsurf, and other compatible agents. Installs contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/proofcase).
 
-You can also clone the repository into a tool-specific skills directory.
-
-### Codex
+You can clone the skill into an agent-specific directory:
 
 ```bash
+# Codex
 git clone https://github.com/getkishore92/proofcase.git ~/.codex/skills/proofcase
-```
 
-### Claude Code
-
-```bash
+# Claude Code
 git clone https://github.com/getkishore92/proofcase.git ~/.claude/skills/proofcase
 ```
 
-Restart the tool if it does not detect the new skill.
+Restart the agent if it does not detect the skill.
+
+For agents without Skills CLI support, load `SKILL.md` as project knowledge or include it in the system prompt. Load reference files when the task needs them.
 
 ## Use
+
+Audit an existing case study:
 
 ```text
 Use $proofcase to audit this case study for a senior product designer role: [URL or file]
 ```
 
+Build from raw material:
+
 ```text
-Use $proofcase to turn these project notes and screenshots into a web case study. Ask me for any facts you cannot verify.
+Use $proofcase to turn these notes, screenshots, and project files into a web case study. Ask me for facts you cannot verify.
 ```
+
+Tailor to a role:
 
 ```text
 Use $proofcase to tailor my existing case study to this job description without changing the facts.
 ```
 
+Prepare an interview:
+
 ```text
-Use $proofcase to convert this case study into a 20-minute portfolio presentation.
+Use $proofcase to convert this case study into a 20-minute presentation and identify the questions I need to defend.
 ```
+
+Improve an engineering case study:
+
+```text
+Use $proofcase to rewrite this engineering project around architecture decisions, constraints, rollout, reliability, and measurable product impact.
+```
+
+## What you receive
+
+A full run can produce:
+
+1. target role and seniority assessment
+2. evidence and ownership gaps
+3. a revised case-study structure
+4. publishable copy with visual directions and captions
+5. a record of the important changes
+6. likely interview questions and weak points
+7. optional recruiter, web, presentation, and job-specific versions
+
+The bundled [examples](references/examples.md) use fictional composites to demonstrate stronger B2B, B2C, research, engineering, design-engineering, AI-product, and leadership case studies. Every invented fact is labeled and exists for teaching.
+
+## What it catches
+
+- **Generic process:** methods listed without a decision they changed
+- **Inflated ownership:** shared delivery written as solo work
+- **Metric spin:** positive numbers without baselines, time windows, regressions, or caveats
+- **Fake research:** invented participants, personas, quotes, validation, or findings
+- **Buried work:** final designs, prototypes, code, and outcomes placed after long setup
+- **Weak visual proof:** screenshot galleries without annotations or useful captions
+- **Seniority mismatch:** execution framed as strategy, or leadership described without team leverage
+- **AI theater:** tool lists without verification, judgment, or a traceable result
+- **Success theater:** every decision works and no limitation survives launch
+- **Synthetic copy:** filler, vague claims, repetitive rhythm, and stock case-study language
 
 ## Why this exists
 
-AI can generate polished prose, process diagrams, and interface concepts in minutes. Hiring teams still need evidence of what a candidate owned, how they made decisions, what shipped, and what changed. This skill helps candidates make that evidence easy to inspect without turning every project into the same process template.
+AI can produce fluent prose, process diagrams, interface concepts, and polished mockups in minutes. Hiring teams still need to identify the candidate's contribution and judgment. A useful case study shows the decision, evidence, shipped result, cost, and follow-up.
 
-The skill rejects fabricated research and decorative process artifacts. Card sorts, personas, journey maps, and workshop photos belong only when they are real and changed the work. A credible case study includes limits, failed or flat results, and the next decision when those facts affected the project.
+Proofcase treats the portfolio as evidence for a hiring conversation. It cannot guarantee an interview or job.
 
-## Credits
+## Research and credits
 
-The copy review adapts principles from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya, used under the MIT License.
+The workflow draws on current portfolio and skills-based hiring research listed in [references/research.md](references/research.md).
 
-The narrative approach responds to Fabricio Teixeira's critique in [The case study factory](https://essays.uxdesign.cc/case-study-factory/) and draws on current portfolio and skills-based hiring research listed in [references/research.md](references/research.md).
+The narrative guidance responds to Fabricio Teixeira's critique in [The case study factory](https://essays.uxdesign.cc/case-study-factory/): repeated process templates can hide the judgment a case study should reveal.
 
-The initial [before-and-after examples](references/examples.md) use Kishore Sundarajan's public Pocket FM and Togai case studies with permission. Contributions from other authors require explicit permission or a compatible license.
-
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the stop-slop copyright and license notice.
+The copy review adapts principles from [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya under the MIT License. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## License
 
