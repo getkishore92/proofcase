@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfolio Case Study"
+  short_description: "Turn project work into a credible case study"
+  default_prompt: "Use $portfolio-case-study to audit and improve my portfolio case study for a specific role."
