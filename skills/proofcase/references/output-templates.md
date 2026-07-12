@@ -5,10 +5,24 @@
 1. Target role and inferred level
 2. Hiring verdict in three sentences
 3. Blockers
-4. Rubric scores with evidence
-5. Top five changes in priority order
-6. Missing proof and recovery options
-7. Rewritten opening
+4. Overall Proofcase rating with rubric evidence
+5. AI and agent scannability ratings
+6. Top five changes in priority order
+7. Missing proof and recovery options
+8. Rewritten opening
+9. Before-and-after scorecard when a completed revision exists
+
+## Rating scorecard
+
+```markdown
+| Rating | Before | After | Change |
+|---|---:|---:|---:|
+| Proofcase score | [0–100] | [0–100 or Pending] | [delta or Pending] |
+| AI scannability | [0–100] | [0–100 or Pending] | [delta or Pending] |
+| Agent scannability | [0–100] | [0–100 or Pending] | [delta or Pending] |
+```
+
+Follow the table with the specific edits that changed each rating. Keep unresolved evidence gaps in the after score.
 
 ## Full web case study
 

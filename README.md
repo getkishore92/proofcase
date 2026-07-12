@@ -32,6 +32,7 @@ proofcase/
 │           ├── narrative-and-evidence.md
 │           ├── output-templates.md
 │           ├── research.md
+│           ├── scannability.md
 │           └── rubric.md
 ├── README.md
 ├── THIRD_PARTY_NOTICES.md
@@ -50,6 +51,8 @@ proofcase/
 - remove generic process sections and AI-sounding copy
 - prepare a web case study, recruiter skim, or interview presentation
 - anticipate the questions a hiring panel will ask
+- rate the original and revised case with the same evidence-based scorecard
+- measure AI and agent scannability without claiming an ATS success rate
 
 ## How it works
 
@@ -83,6 +86,24 @@ Proofcase removes card sorts, personas, journey maps, workshop photos, and proce
 ### Use visual and interactive evidence
 
 The skill helps select and caption images, prototypes, recordings, motion, live demos, diagrams, and code. It treats interaction and easter eggs as useful craft signals when they support the work and remain accessible.
+
+### Measure improvement
+
+Proofcase scores the original and completed revision on the same rubric. It reports an overall score, AI scannability, agent scannability, and the change between versions.
+
+AI scannability checks whether an LLM can extract the role, ownership, decisions, evidence, outcomes, and limits without guessing. Agent scannability checks semantic structure, stable navigation, media labels, fallbacks, keyboard operation, and page metadata.
+
+The rating describes the submitted case study. It does not predict an interview, ATS rank, or hiring decision. Planned edits do not receive points.
+
+A completed rewrite returns a scorecard like this:
+
+| Rating | Before | After | Change |
+|---|---:|---:|---:|
+| Proofcase score | 58 | 82 | +24 |
+| AI scannability | 44 | 81 | +37 |
+| Agent scannability | 56 | 88 | +32 |
+
+These numbers illustrate the output format. Proofcase calculates the actual scores from the submitted versions.
 
 ## Install
 
@@ -152,7 +173,8 @@ A full run can produce:
 4. publishable copy with visual directions and captions
 5. a record of the important changes
 6. likely interview questions and weak points
-7. optional recruiter, web, presentation, and job-specific versions
+7. overall, AI-scannability, and agent-scannability ratings with before-and-after deltas
+8. optional recruiter, web, presentation, and job-specific versions
 
 The bundled [examples](skills/proofcase/references/examples.md) use fictional composites to demonstrate stronger B2B, B2C, research, engineering, design-engineering, AI-product, and leadership case studies. Every invented fact is labeled and exists for teaching.
 
@@ -168,6 +190,8 @@ The bundled [examples](skills/proofcase/references/examples.md) use fictional co
 - **AI theater:** tool lists without verification, judgment, or a traceable result
 - **Success theater:** every decision works and no limitation survives launch
 - **Synthetic copy:** filler, vague claims, repetitive rhythm, and stock case-study language
+- **AI extraction gaps:** ambiguous ownership, undefined terms, unsupported claims, and visual-only evidence
+- **Agent access gaps:** weak semantics, missing labels, fragile interactions, and content hidden behind scripts or media
 
 ## Why this exists
 

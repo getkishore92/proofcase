@@ -20,7 +20,7 @@ Source: [The case study factory](https://essays.uxdesign.cc/case-study-factory/)
 
 Current portfolio commentary from hiring managers and design directors repeatedly favors clear role attribution, strong visual hierarchy, visible final work, concise writing, and project-specific decisions. These reports are qualitative and sometimes disagree on the balance between craft and process. The safe synthesis is to support a fast scan, then make deeper evidence available.
 
-Sources: [The Portfolio Hiring Managers Want to See](https://careers.heb.com/blog/the-portfolio-hiring-managers-want-to-see), H-E-B, 2025; [15 brilliant design portfolio examples, and why they work](https://www.creativebloq.com/portfolios/examples-712368), Creative Bloq, 2026; [How to Evaluate a Product Designer's Portfolio](https://designpixil.com/blog/how-to-evaluate-designer-portfolio), Design Pixil.
+Sources: [The Portfolio Hiring Managers Want to See](https://careers.heb.com/blog/the-portfolio-hiring-managers-want-to-see), H-E-B, 2025; [15 brilliant design portfolio examples, and why they work](https://www.creativebloq.com/portfolios/examples-712368), Creative Bloq, 2026.
 
 ### Match the portfolio to the role and level
 
