@@ -1,9 +1,9 @@
 ---
-name: portfolio-case-study
+name: proofcase
 description: Audit, reconstruct, write, and tailor portfolio case studies for product designers, UX researchers, product managers, software developers, and design engineers. Use when a user wants to turn rough project notes, an existing case study, a portfolio URL, screenshots, a deck, a repository, or a job description into a concise and credible case study; diagnose why a case study is weak; adapt evidence and depth to junior, mid-level, senior, staff, lead, or manager roles; prepare a portfolio presentation; or show AI-era skills without inventing process, impact, or ownership.
 ---
 
-# Portfolio Case Study
+# Proofcase
 
 Build evidence for a hiring decision. Preserve the user's voice, actual contribution, and confidentiality constraints.
 

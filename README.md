@@ -1,8 +1,10 @@
-# Portfolio Case Study
+# Proofcase
 
-[![skills.sh](https://skills.sh/b/getkishore92/portfolio-case-study)](https://skills.sh/getkishore92/portfolio-case-study)
+[![skills.sh](https://skills.sh/b/getkishore92/proofcase)](https://skills.sh/getkishore92/proofcase)
 
-An open Agent Skill that turns rough project material into a credible portfolio case study for product designers, UX researchers, product managers, software developers, and design engineers.
+**Case studies that hold up under scrutiny.**
+
+Proofcase is an open Agent Skill that turns rough project material into a credible portfolio case study for product designers, UX researchers, product managers, software developers, and design engineers.
 
 It can audit an existing case study, interview you to recover missing context, rewrite the story, tailor it to a job description, or create an interview presentation. It adjusts the expected proof for junior, mid-level, senior, staff, lead, and manager roles.
 
@@ -29,23 +31,23 @@ The skill does not invent metrics, research, impact, or ownership. It flags miss
 Install it for Codex, Claude Code, Cursor, Windsurf, and other supported agents with the Skills CLI:
 
 ```bash
-npx skills add getkishore92/portfolio-case-study
+npx skills add getkishore92/proofcase
 ```
 
-The CLI detects the available agent and installs the root `SKILL.md` with its references. Installs made through the CLI contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/portfolio-case-study). Review any skill before installing it because agent skills run with the permissions of the host agent.
+The CLI detects the available agent and installs the root `SKILL.md` with its references. Installs made through the CLI contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/proofcase). Review any skill before installing it because agent skills run with the permissions of the host agent.
 
 You can also clone the repository into a tool-specific skills directory.
 
 ### Codex
 
 ```bash
-git clone https://github.com/getkishore92/portfolio-case-study.git ~/.codex/skills/portfolio-case-study
+git clone https://github.com/getkishore92/proofcase.git ~/.codex/skills/proofcase
 ```
 
 ### Claude Code
 
 ```bash
-git clone https://github.com/getkishore92/portfolio-case-study.git ~/.claude/skills/portfolio-case-study
+git clone https://github.com/getkishore92/proofcase.git ~/.claude/skills/proofcase
 ```
 
 Restart the tool if it does not detect the new skill.
@@ -53,19 +55,19 @@ Restart the tool if it does not detect the new skill.
 ## Use
 
 ```text
-Use $portfolio-case-study to audit this case study for a senior product designer role: [URL or file]
+Use $proofcase to audit this case study for a senior product designer role: [URL or file]
 ```
 
 ```text
-Use $portfolio-case-study to turn these project notes and screenshots into a web case study. Ask me for any facts you cannot verify.
+Use $proofcase to turn these project notes and screenshots into a web case study. Ask me for any facts you cannot verify.
 ```
 
 ```text
-Use $portfolio-case-study to tailor my existing case study to this job description without changing the facts.
+Use $proofcase to tailor my existing case study to this job description without changing the facts.
 ```
 
 ```text
-Use $portfolio-case-study to convert this case study into a 20-minute portfolio presentation.
+Use $proofcase to convert this case study into a 20-minute portfolio presentation.
 ```
 
 ## Why this exists
