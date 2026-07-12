@@ -1,6 +1,6 @@
 # Proofcase
 
-[![skills.sh](https://skills.sh/b/getkishore92/proofcase)](https://skills.sh/getkishore92/proofcase)
+[![Install Proofcase from skills.sh](https://img.shields.io/badge/skills.sh-install%20Proofcase-111827?style=flat-square)](https://skills.sh/getkishore92/proofcase/proofcase)
 
 ![Proofcase: Turn project work into proof](assets/proofcase-cover.png)
 
@@ -92,7 +92,7 @@ Install with the Skills CLI:
 npx skills add getkishore92/proofcase
 ```
 
-The CLI supports Codex, Claude Code, Cursor, Windsurf, and other compatible agents. Installs contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/proofcase).
+The CLI supports Codex, Claude Code, Cursor, Windsurf, and other compatible agents. Installs contribute anonymous aggregate telemetry to the [skills.sh listing](https://skills.sh/getkishore92/proofcase/proofcase).
 
 You can clone the repository and copy its skill package into an agent-specific directory:
 
