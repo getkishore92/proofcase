@@ -1,6 +1,6 @@
 interface:
   display_name: "Proofcase"
-  short_description: "Build a case study that holds up"
+  short_description: "Review and improve a credible case study"
   icon_small: "./assets/proofcase-icon.png"
   icon_large: "./assets/proofcase-wordmark.png"
-  default_prompt: "Use $proofcase to audit and improve my portfolio case study for a specific role, then show its overall, AI-scannability, and agent-scannability ratings."
+  default_prompt: "Use $proofcase to review my case study at my career level, identify unsupported claims, and guide me through the two changes that would improve it most."

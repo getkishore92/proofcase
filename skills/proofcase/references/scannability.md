@@ -33,6 +33,8 @@ Score whether an LLM can build an accurate account from the available text.
 
 Score whether a browser or recruiting agent can navigate, extract, and verify the case.
 
+Score an actual page, document, or implementation. When the user supplied only copy, an outline, or planned behavior, report agent scannability as `Pending` rather than assigning points.
+
 | Check | What earns 2 points |
 |---|---|
 | Semantic structure | The page uses a coherent heading hierarchy, landmarks, lists, tables, and real text. |
@@ -52,7 +54,7 @@ Use the same checks for the original and revision.
 - Score the revised copy or implementation only after it exists.
 - Re-test live behavior when code or layout changed.
 - Do not award implementation points to a copy-only draft.
-- Keep unverified checks at `1` and explain how to test them.
+- Use `1` for an implemented check that remains incomplete, ambiguous, or unverified. Use `Pending` when no implementation exists to inspect.
 - Report negative deltas when a revision removes useful context, semantics, or accessibility.
 
 Return a short explanation for every changed check. A delta without a reason does not help the user improve the case.

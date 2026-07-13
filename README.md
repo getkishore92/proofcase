@@ -29,6 +29,7 @@ proofcase/
 │           ├── examples.md         # Fictional before-and-after lessons
 │           ├── industry-patterns.md
 │           ├── intake-and-seniority.md
+│           ├── junior-evidence.md
 │           ├── narrative-and-evidence.md
 │           ├── output-templates.md
 │           ├── research.md
@@ -42,6 +43,7 @@ proofcase/
 ## What Proofcase helps you do
 
 - find the strongest story inside a messy project
+- review a first case study one section at a time
 - make ownership and team boundaries clear
 - match the depth to junior, mid-level, senior, staff, lead, or manager roles
 - tailor one case study to a specific job without changing the facts

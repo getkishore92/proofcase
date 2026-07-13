@@ -1,10 +1,24 @@
 # Output templates
 
+## Coach
+
+Use this for a first case study, an early-career candidate, or a user who wants guided improvement:
+
+1. Likely recruiter takeaway
+2. Strongest evidence already present
+3. Largest credibility or clarity gap
+4. Hiring question behind that gap
+5. One or two questions for the user
+6. Revised excerpt after the user answers
+7. Next two actions
+
+Review one section at a time. Keep the scorecard optional unless the user asks for an audit.
+
 ## Audit
 
 1. Target role and inferred level
 2. Hiring verdict in three sentences
-3. Blockers
+3. Integrity blockers, publishability blockers, and role-fit gaps
 4. Overall Proofcase rating with rubric evidence
 5. AI and agent scannability ratings
 6. Top five changes in priority order
