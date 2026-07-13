@@ -38,6 +38,49 @@ Review one section at a time. Keep the scorecard optional unless the user asks f
 
 Follow the table with the specific edits that changed each rating. Keep unresolved evidence gaps in the after score.
 
+## Revision trail
+
+Use this for a substantial rewrite, job-tailored version, or file edit. Prefer the host tool's native diff when it is available. Use the formats below when the host cannot show a useful diff.
+
+### Source map
+
+```markdown
+| ID | Claim | Source or artifact | Confidence | Ownership | Limitation |
+|---|---|---|---|---|---|
+| S1 | [claim] | [file, URL, screenshot, note, or dataset] | [confirmed, attributed, estimated, or unknown] | [user, team, partner, or company] | [counterevidence, cost, or missing context] |
+```
+
+### Change review
+
+```markdown
+## [Section or file location]
+
+**Original**
+[original text]
+
+**Revised**
+[revised text]
+
+**Reason**
+[hiring question, clarity problem, or structural reason]
+
+**Source**
+[source-map ID, or `No new factual claim`]
+
+**Status**
+[proposed, applied, accepted, or rejected]
+```
+
+For a file edit, finish with:
+
+```markdown
+Original: [preserved path or version]
+Revised: [new path or working-tree file]
+Revert through: [host checkpoint, editor history, Git reference, or preserved original]
+```
+
+Name the available revert route. Do not claim that Proofcase supplies rollback, and do not run a revert without the user's request.
+
 ## Full web case study
 
 ```markdown

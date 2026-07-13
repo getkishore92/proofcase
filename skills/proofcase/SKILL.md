@@ -1,6 +1,6 @@
 ---
 name: proofcase
-description: Audit, coach, score, reconstruct, write, and tailor portfolio case studies for product designers, UX researchers, product managers, software developers, and design engineers. Use when a user wants to review a first or early-career case study; turn rough project notes, an existing case study, a portfolio URL, screenshots, a deck, a repository, or a job description into a concise and credible case study; compare before-and-after quality; measure AI or agent scannability; diagnose why a case study is weak; adapt evidence and depth to junior, mid-level, senior, staff, lead, or manager roles; prepare a portfolio presentation; or show AI-era skills without inventing process, impact, or ownership.
+description: Audit, coach, score, reconstruct, write, and tailor portfolio case studies for product designers, UX researchers, product managers, software developers, and design engineers. Use when a user wants to review a first or early-career case study; turn rough project notes, an existing case study, a portfolio URL, screenshots, a deck, a repository, or a job description into a concise and credible case study; compare before-and-after quality; produce source-linked diffs and non-destructive revisions; measure AI or agent scannability; diagnose why a case study is weak; adapt evidence and depth to junior, mid-level, senior, staff, lead, or manager roles; prepare a portfolio presentation; or show AI-era skills without inventing process, impact, or ownership.
 ---
 
 # Proofcase
@@ -20,6 +20,7 @@ Build evidence for a hiring decision. Preserve the user's voice, actual contribu
 9. Keep AI use factual. Explain what the user did with AI, what they verified, and where human judgment changed the result.
 10. Protect confidential work. Offer redaction, ranges, indexing, reconstructed diagrams, or password-protected delivery.
 11. State limits. A case study can improve fit and interview readiness; it cannot guarantee a job.
+12. Make revisions reviewable. Preserve the original, connect factual changes to evidence, and identify the host tool's revert path.
 
 ## Choose the mode
 
@@ -222,6 +223,20 @@ Read [references/scannability.md](references/scannability.md) for AI and agent s
 
 Keep AI and agent scannability separate from the overall Proofcase score. Score only applicable Proofcase dimensions. Use `N/A` only when the role, project, or artifact makes a conditional dimension irrelevant; missing expected evidence earns `0`.
 
+## Phase 10: show the revision trail
+
+When a substantial Rewrite, Tailor, or Build engagement has an original draft or file, make the changes easy to inspect:
+
+- Preserve the original artifact.
+- Show a native file diff or patch when the host tool supports one. Otherwise use the change-review format in [references/output-templates.md](references/output-templates.md).
+- Connect every consequential factual change to an evidence-ledger source. Mark structural or copy-only edits as `No new factual claim`.
+- Separate proposed edits from applied edits. Do not describe a proposal as changed work.
+- Default to a new sibling file when no version history or revert control exists. Do not overwrite the original without the user's approval.
+
+If the user starts from raw material without an original draft, provide the source map and label the result as new copy. Do not manufacture a diff.
+
+Rollback belongs to the host tool, editor history, or version-control system. Proofcase does not provide a universal rollback mechanism. After editing files, name the preserved original, the revised artifact, and the available revert path. If the environment has no revert feature, keep both versions and explain that restoring the original means selecting or copying the preserved artifact. Never run a revert unless the user requests it.
+
 ## Deliver the result
 
 Match the user's request. A full engagement should produce:
@@ -229,16 +244,17 @@ Match the user's request. A full engagement should produce:
 1. **Positioning:** target role, seniority signal, and one-sentence case-study promise
 2. **Evidence gaps:** missing proof and ways to recover or represent it without invention
 3. **Revised case study:** publishable copy with visual placeholders and captions
-4. **Change log:** the most consequential structural and copy changes
-5. **Interview defense:** likely questions, weak points, and concise answers grounded in the record
-6. **Ratings:** overall Proofcase score, AI scannability, agent scannability, and honest before-and-after deltas
-7. **Optional variants:** recruiter skim, full web case study, presentation outline, and job-tailored version
+4. **Revision trail:** a source map, reviewable diff, and status for consequential changes
+5. **Revert path:** the preserved original and the host, editor, or version-control route for restoring it when files changed
+6. **Interview defense:** likely questions, weak points, and concise answers grounded in the record
+7. **Ratings:** overall Proofcase score, AI scannability, agent scannability, and honest before-and-after deltas
+8. **Optional variants:** recruiter skim, full web case study, presentation outline, and job-tailored version
 
 In Coach mode, follow the junior review output in [references/junior-evidence.md](references/junior-evidence.md). Do not bury an early-career user in the full rubric unless they ask for an audit or score.
 
 When useful, add one or two focused before-and-after excerpts. Label any reconstructed example and preserve the facts in both versions.
 
-When editing files, preserve the original unless the user authorizes an in-place change. For a review, do not publish, deploy, or change external systems.
+When editing files, preserve the original unless the user authorizes an in-place change. Report the available revert path without claiming that Proofcase owns rollback. For a review, do not publish, deploy, or change external systems.
 
 ## Research basis
 

@@ -54,6 +54,8 @@ proofcase/
 - prepare a web case study, recruiter skim, or interview presentation
 - anticipate the questions a hiring panel will ask
 - rate the original and revised case with the same evidence-based scorecard
+- review source-linked diffs for consequential changes
+- preserve the original and identify the available revert path when files change
 - measure AI and agent scannability without claiming an ATS success rate
 
 ## How it works
@@ -61,6 +63,10 @@ proofcase/
 ### Evidence before narrative
 
 Proofcase builds a claim ledger for ownership, sources, confidence, outcomes, and counterevidence. Missing proof stays missing. Estimates remain estimates. Shared outcomes receive shared attribution.
+
+### Review every revision
+
+Proofcase can pair consequential edits with the original text, revised text, reason, and supporting source. It preserves the original before changing files. The AI tool, editor history, or Git provides the actual rollback; Proofcase identifies that route and never runs a revert without the user's request.
 
 ### Match proof to the work
 
@@ -173,10 +179,11 @@ A full run can produce:
 2. evidence and ownership gaps
 3. a revised case-study structure
 4. publishable copy with visual directions and captions
-5. a record of the important changes
-6. likely interview questions and weak points
-7. overall, AI-scannability, and agent-scannability ratings with before-and-after deltas
-8. optional recruiter, web, presentation, and job-specific versions
+5. a source map and reviewable diff for consequential changes
+6. the preserved original and available revert path when files change
+7. likely interview questions and weak points
+8. overall, AI-scannability, and agent-scannability ratings with before-and-after deltas
+9. optional recruiter, web, presentation, and job-specific versions
 
 The bundled [examples](skills/proofcase/references/examples.md) use fictional composites to demonstrate stronger B2B, B2C, research, engineering, design-engineering, AI-product, and leadership case studies. Every invented fact is labeled and exists for teaching.
 
